@@ -1,2 +1,1 @@
-# appblx
-Aplicativo baseado no Olx, AppBLX feito em Fast-API
+# Aplicativo baseado no Olx, AppBLX feito em Fast-API
