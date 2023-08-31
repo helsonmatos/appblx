@@ -16,9 +16,10 @@ class RepositorioProduto():
         self.db.commit()
         self.db.refresh(db_produto)
         return db_produto
-        
+
     def listar(self):
-        pass
+        produtos = self.db.query(models.Produto).all()
+        return produtos
 
     def obter(self):
         pass
