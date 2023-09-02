@@ -1,8 +1,11 @@
 from fastapi import FastAPI, Depends
 from sqlalchemy.orm import Session
 from src.schemas.schemas import Produto
-from src.infra.sqlalchemy.config.database import get_db
+from src.infra.sqlalchemy.config.database import get_db, criar_bd
 from src.infra.sqlalchemy.repositorios.produto import RepositorioProduto
+
+criar_bd()
+
 
 app = FastAPI()
 
